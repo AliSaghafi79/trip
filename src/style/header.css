@@ -1,13 +1,81 @@
-.header{
-    background-color: red;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.header {
+  background-color: white;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 5px 10px #cac9c9;
+  color: rgba(4, 10, 31, 0.87);
+  position: fixed;
 }
 .header2 {
-    background-color: blue;
-    width: 90%;
-    height: 100%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.headerBox1,
+.headerBox2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.headerBox1 a img {
+  width: 5rem;
+  height: 100%;
+}
+
+#service {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  fill: #040a1fde !important;
+}
+
+.items {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  padding: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.items:hover {
+  background-color: rgb(244, 242, 242);
+}
+
+#login {
+  background-color: #575eff;
+  border-radius: 4rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
+#login a {
+  color: white;
+}
+#login:hover {
+  background-color: rgb(87, 94, 255, 0.93);
+}
+
+.photo {
+  width: 100%;
+  height: 208px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.photo img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
 }
