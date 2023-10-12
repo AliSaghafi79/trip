@@ -1,6 +1,11 @@
+:root {
+  --white-color: #fff;
+}
+/* $white-color:#fff */
+
 .city {
   width: 100%;
-  background-color: white;
+  background-color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +14,7 @@
 }
 
 ._city {
-  width: 80%;
+  width: 1336px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

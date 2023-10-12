@@ -11,3 +11,7 @@
 body {
   background-color: #ebecf2;
 }
+
+.container {
+  max-width: 1366px;
+}
