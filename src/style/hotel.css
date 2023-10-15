@@ -8,7 +8,8 @@
   padding-bottom: 3rem;
 }
 ._hotel {
-  width: 1336px;
+  max-width: 1336px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -71,7 +72,6 @@
 .tabcontent {
   position: relative;
   display: none;
-  width: 100%;
   overflow: hidden;
   padding: 0.2rem 0.2rem;
   transition: all;
@@ -82,7 +82,6 @@
 .tabcontent .swiper-wrapper .swiper-slide {
   /* background-color: yellowgreen; */
   border-radius: 10px;
-  width: 100%;
   height: 300px;
   border: 1px solid rgb(221, 221, 221);
 }
@@ -212,4 +211,34 @@
 
 .hotel-content div:last-child .hotel-contentFour {
   justify-content: end;
+}
+
+@media only screen and (max-width: 1280px) {
+  .hotel {
+    padding: 3rem 2rem;
+  }
+  .tabcontent .swiper-slide {
+    width: 80% !important;
+  }
+
+  .tabcontent .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .tabcontent .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+  .tabcontent:hover .swiper-button-next,
+  .tabcontent:hover .swiper-button-prev {
+    display: none !important;
+  }
+  .tabcontent .swiper-wrapper .swiper-slide {
+    width: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1536px) {
+  .hotel {
+    padding: 3rem 5rem;
+  }
 }

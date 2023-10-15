@@ -16,7 +16,7 @@
   border-radius: 0.5rem;
 }
 
-.subBox .sub1 {
+.sub1 {
   width: 100%;
   height: 35%;
   border-bottom: 1px solid #e3e3e3;
@@ -25,9 +25,10 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 0 3rem;
 }
 
-.subBox .sub1 .item {
+.sub1 .tabLinksPage {
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
@@ -43,23 +44,11 @@
   cursor: pointer;
 }
 
-.subBox .sub1 .item:first-child {
-  border-bottom: 2px solid red;
-}
-
-.subBox .sub1 .item:first-child p{
-  color: red !important;
-}
-
-.subBox .sub1 .item:first-child svg {
-  fill: red;
-}
-
-.subBox .sub1 .item:hover {
+.sub1 .tabLinksPage:hover {
   background-color: #fff3f3;
 }
 
-.subBox .sub1 .item svg {
+.sub1 .tabLinksPage svg {
   width: 23px;
   height: 23px;
   fill: rgba(4, 10, 31, 0.6);
@@ -67,4 +56,190 @@
 .subBox .sub2 {
   width: 100%;
   height: 65%;
+  padding: 1.5rem 3rem;
+}
+.tab {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: #040a1fde;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  cursor: pointer;
+}
+.tab {
+  border-bottom: 2px solid #ed071a !important;
+}
+
+.tab p {
+  color: #ed071a !important;
+}
+
+.tab svg {
+  fill: #ed071a !important;
+}
+
+.tabContentPage {
+  display: none;
+}
+.sub2-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectBtn {
+  border: 1px solid #575eff;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selectBtn:hover {
+  background-color: rgba(87, 94, 255, 0.1);
+}
+.selectBtn p {
+  color: #575eff;
+}
+
+.sub2-content span:last-child {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.s-input {
+  width: 55%;
+  border: 1px solid rgba(4, 10, 31, 0.5);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.s-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.s-input:hover {
+  border: 1px solid rgba(4, 10, 31, 1);
+}
+.s-input:active {
+  border: 2px solid #575eff;
+}
+.s-date {
+  width: 35%;
+  border: 1px solid rgba(4, 10, 31, 0.5);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.s-date input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.s-date div {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(4, 10, 31, 0.5);
+}
+.s-submit {
+  width: 10%;
+  background-color: #ed071a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    padding-bottom: 0;
+  }
+  .subBox {
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 140px;
+  }
+  .subBox .sub2 {
+    height: auto;
+    padding: 1.5rem 3rem;
+  }
+  .sub2-content span:last-child {
+    flex-direction: column;
+  }
+  .s-input,
+  .s-date,
+  .s-submit {
+    width: 100%;
+  }
+  .s-submit {
+    padding: 1rem;
+  }
+  .responsive {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .responsive {
+    width: 90%;
+  }
+  .sub1 {
+    gap: 0;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .sub1 .tabLinksPage {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .s-input {
+    width: 47%;
+  }
+  .s-date {
+    width: 46%;
+  }
+  .sub2-content span:last-child {
+    flex-wrap: wrap;
+  }
+  .s-submit {
+    width: 100%;
+    padding: 1rem;
+  }
+  .subBox {
+    height: auto;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .responsive {
+    width: 95%;
+  }
+  
 }

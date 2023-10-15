@@ -14,7 +14,8 @@
 }
 
 ._city {
-  width: 1336px;
+  max-width: 1336px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -85,4 +86,35 @@
   height: 2rem;
   object-fit: contain;
   transform-origin: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .city {
+    padding: 3rem 2rem;
+  }
+  .myCity .swiper-slide {
+    width: 80% !important;
+  }
+
+  .myCity .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .myCity .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+  .myCity:hover .swiper-button-next,
+  .myCity:hover .swiper-button-prev {
+    display: none !important;
+  }
+
+  .myCity .swiper-wrapper .swiper-slide {
+    width: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1536px) {
+  .city {
+    padding: 3rem 5rem;
+  }
 }

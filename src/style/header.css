@@ -11,6 +11,7 @@
   z-index: 100;
 }
 .header2 {
+  max-width: 1366px;
   width: 80%;
   height: 100%;
   display: flex;
@@ -48,7 +49,8 @@
   cursor: pointer;
 }
 
-.items:hover {
+.items:hover,
+.itemsMobile:hover {
   background-color: rgb(244, 242, 242);
 }
 
@@ -76,7 +78,313 @@
   background-color: white;
 }
 .photo img {
+  display: none;
   width: 80%;
   height: 100%;
   object-fit: cover;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  background-color: white;
+  width: 300px;
+  top: 5rem;
+  right: 14rem;
+  z-index: 101;
+  box-shadow: 0px 5px 10px #cac9c9;
+  border-radius: 7px;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.show {
+  display: block;
+}
+
+.tabMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.tabMenu:hover {
+  background-color: rgb(245, 245, 245);
+}
+.header-mobile {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.headerMobileOne {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  padding: 0.5rem 1rem 0;
+}
+
+.headerMobileOneOption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+.headerMobileOneOption:last-child {
+  justify-content: end;
+  gap: 0.7rem;
+}
+
+.headerMobileOneOption:first-child img {
+  width: 70px;
+  height: 70px;
+}
+
+.itemsMobile {
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.headerMobileTow {
+  width: 100%;
+  height: 50%;
+}
+.person {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #575eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar {
+  display: block;
+  padding: 2px 0 15px 0;
+}
+
+#sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  z-index: 200;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebarLogo {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.sidebarOption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+._sidebarOption {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+._sidebarOption span {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+._sidebarOption span p {
+  font-size: 18px;
+}
+
+.side-drop {
+  transform: rotate(90deg);
+}
+.res1024 {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    box-shadow: none;
+  }
+  .header2 {
+    display: none;
+  }
+  .photo {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .sub1 {
+    height: 100% !important;
+    gap: 0.2rem !important;
+    padding: 0 !important;
+  }
+  .sub1 .tabLinksPage {
+    gap: 0.2rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    width: 100% !important;
+  }
+  .tab {
+    gap: 0.2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  #sidebar {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    box-shadow: none;
+  }
+  .header2 {
+    display: none;
+  }
+  .photo {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .sub1 {
+    height: 100% !important;
+    gap: 0.2rem !important;
+    padding: 0 !important;
+  }
+  .sub1 .tabLinksPage {
+    gap: 0.2rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    width: 100% !important;
+  }
+  .tab {
+    gap: 0.2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  #sidebar {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header2 {
+    width: 100%;
+  }
+  .nonRes1024 {
+    display: none;
+  }
+  .res1024 {
+    display: block;
+  }
+  .headerBox1,
+  .headerBox2 {
+    gap: 0.3rem;
+  }
+  .photo {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .photo img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .header2 {
+    width: 95%;
+  }
+  .nonRes1024 {
+    display: block;
+  }
+  .res1024 {
+    display: none;
+  }
+  .headerBox1,
+  .headerBox2 {
+    gap: 0.3rem;
+  }
+  .photo {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .photo img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

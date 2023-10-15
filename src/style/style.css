@@ -6,10 +6,12 @@
   font-weight: 500;
   font-family: "Vazirmatn", sans-serif;
   color: rgba(4, 10, 31, 0.87);
+  
 }
 
 body {
   background-color: #ebecf2;
+  position: relative;
 }
 
 .container {
