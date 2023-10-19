@@ -1,0 +1,129 @@
+.header-hotel {
+  background-color: white;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px #cac9c9;
+  color: rgba(4, 10, 31, 0.87);
+}
+
+._header-hotel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-hotel-options,
+.header-hotel-login,
+.header-hotel-call {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-hotel-options button {
+  background-color: #fff;
+  border: 1px solid #ff4232;
+  text-align: center;
+  color: #ff4232;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.header-hotel-options button:hover {
+  color: #fff;
+  background-color: rgba(255, 66, 50, 0.7);
+  border: 1px solid rgba(255, 66, 50, 0.7);
+}
+
+.header-hotel-options a {
+  color: #a3a3a3;
+  transition: all 0.3s;
+}
+
+.header-hotel-options a:hover {
+  color: #ff4232;
+}
+
+.header-hotel-login button {
+  background-color: #fff;
+  text-align: center;
+  color: #151f33;
+  padding: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.header-hotel-login button:last-child {
+  background-color: #404040;
+  color: #fff;
+  padding: 0.3rem 1.5rem;
+}
+
+.header-hotel-login button:last-child:hover {
+  background-color: black;
+}
+
+.header-hotel-side {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-hotel-call a svg {
+  transition: all 0.3s;
+}
+.header-hotel-call {
+  gap: 0.3rem;
+}
+.header-hotel-side a:hover svg {
+  fill: #ff4232;
+}
+
+.header-hotel-call a {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+  padding: 0.2rem 1rem;
+  min-width: 150px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.header-hotel-call a:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,80 @@
+#margin-search {
+  margin-top: 10rem;
+}
+
+.search-hotel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 5rem;
+}
+
+.search-hotel-input-text,
+.search-hotel-input-date {
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.search-hotel-input-text input:focus,
+.search-hotel-input-date input:focus {
+  outline: none;
+}
+.search-hotel-input-text input,
+.search-hotel-input-date input {
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  color: #a3a3a3;
+  font-size: 1.1rem;
+}
+.search-hotel-input-text p,
+.search-hotel-input-date p {
+  color: #a3a3a3;
+  font-size: 10px;
+}
+
+.search-hotel-input-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search-hotel-input-date span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-hotel-input-date span:first-child {
+  border-left: 1px solid #dadada;
+}
+
+.search-hotel-input-date span:first-child input {
+  padding: 0 0 0 0.5rem;
+}
+
+.search-hotel-submit {
+  width: 10%;
+  height: 100%;
+  background-color: #ff4232;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.search-hotel-submit:hover {
+  background-color: rgb(255, 66, 50, 0.8);
+}
